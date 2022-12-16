@@ -1,0 +1,159 @@
+@charset 'UTF-8' ;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+/* Base
+------------------------------------------------*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Noto Sans JP', '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #000;
+    background-color: #f2f2f2;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+small{
+    font-size: 1.2rem;
+}
+
+.header {
+    display: flex;
+}
+
+.header-main-img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/mainmb.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainlogo {
+    padding: 1.4rem;
+    margin: 0;
+    font-size: 3.4rem;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 4rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #A9BF7A;
+}
+
+/* Contents共通 */
+section {
+    padding: 2rem 0;
+}
+
+section h2{
+    width: 100%;
+    text-align: center;
+    font-family:"Noto Serif JP",serif;
+    font-size: 2.4rem;
+    letter-spacing: 0.3rem;
+    color: #A66D97;
+}
+
+#greeting{
+    margin: 2rem;
+    text-align: center;
+}
+/* cafe */
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 1rem auto;
+    padding:0;
+}
+.cafe-title{
+    width: 100%;
+    background-color: #E2F2DA;
+ }
+.cafe-box {
+    width: 100%;
+    /*margin: 0 auto;*/
+    padding: auto;
+    background-color: #F2DAF2;
+}
+.cafe-box img {
+    width: 100%;
+    margin: 0;
+}
+.contact{
+    text-align: center;
+    background-color: #DAF2EF;
+}
+.button-contact {
+    position: relative;
+    display: inline-block;
+    width: 18rem;
+    height: 2.4rem;
+    padding: 2rem 5%;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+    color: #ffffff;
+    background: #D9946C;
+    transition: .3s;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100vh;
+}
+
+/* Footer */
+
+footer {
+    padding: 3rem 0;
+    background: #A9BF7A;
+    text-align: center;
+}
+footer .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* PC表示 768px以上 */
+@media (min-width: 769px){
+    .header-main-img{
+        background-image: url("../images/main.jpg");
+    }
+    .mainlogo{
+        font-size: 4.2rem;
+        line-height: 5rem;
+    }
+    section h2{
+        font-size: 2rem;
+    }
+    .button-contact{
+        width: 25rem;
+        padding: 2rem 0;
+        margin: 3rem auto;
+    }
+    .button-contact:hover{
+        background: #BF6D4E;
+        color: #ffffff;
+    }
+    .container{
+    width: 100%;
+    }
+    .cafe{
+        max-width: 112rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .cafeshop{
+        background-color: #F2DAF2;
+        width: 30%;
+    }
+}
